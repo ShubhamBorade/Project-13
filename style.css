@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.left-container{
+    background-color:antiquewhite;
+    border: 2px solid black;
+    width: 600px;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+.list-item{
+    margin-left: 55px;
+    margin-top: 15px;
+}
+.list-item:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.navbar-container{
+    background-color: blueviolet;
+    height: 100vh;
+}
+.nav-button{
+    margin-top: 12px;
+    margin-right: 58px;
+    padding: 8px 18px;
+    background: #a5a5ff;
+    color: white;
+    border: none;
+    font-size: 15px;
+}
+.nav-button:hover{
+    color: black;
+    background-color: #fff;
+    cursor: pointer;
+}
+.top img{
+    margin-top: 12px;
+    margin-left: 100px;
+}
+.top img:hover{
+    cursor: pointer;
+}
+.below-navcontainer{
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    margin-left: 100px;
+    margin-top: 40px;
+}
+.left h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    color: white;
+}
+.left p{
+    margin-top: 10px;
+    color: white;
+}
+.btn-nav{
+    margin-top: 30px;
+    padding: 10px 15px;
+    background: #a5a5ff;
+    border: none;
+    color: white;
+}
+.btn-nav:hover{
+    color: black;
+    background-color: #fff;
+    cursor: pointer;
+}
+.right img{
+    width: 530px;
+    margin-left: 235px;
+}
+.data-section{
+    display: flex;
+    flex-direction: row;
+}
+.img img{
+    width: 550px;
+    margin-left: 30px;
+}
+.data{
+    margin-top: 132px;
+    margin-left: 200px;
+    font-family: 'Oswald', sans-serif;
+}
+.data h1{
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.one{
+    margin-top: 15px;
+}
+.one h2{
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+.one p{
+    margin-left: 23px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+.Hlast{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+.l-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.card img{
+    width: 55px;
+    margin-top: 10px;
+}
+.card{
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 60px;
+    width: 200px;
+    height: 215px;
+    text-align: center;
+    margin-left: 40px;
+}
+.card:hover{
+    cursor: pointer;
+    box-shadow:6px 6px 6px rgb(58, 58, 58);
+}
+.card h4{
+    margin-top: 10px;
+}
+.card p{
+    margin-top: 16px;
+}
+
+
+/* Media query */
+
+@media (max-width:1080px){
+    .below-navcontainer{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .navbar-container{
+        height: 1000px;
+    }
+    .right img{
+        width: 530px;
+        margin-left: 0px;
+    }
+    .left{
+        text-align: center;
+        margin-left: 0px;
+    }
+    .data-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .data{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .Hlast{
+        font-size: 25px;
+        text-align: center;
+        margin-top: 30px;
+    }
+}
+@media (max-width:935px){
+    .list-item{
+        margin-left: 15px;
+    }
+    .l-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+    }
+    .card{
+        margin-top: 30px;
+    }
+}
+@media (max-width:735px){
+    .top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-button{
+        margin-right: 0px;
+       margin-top: 25px;
+    }
+}
